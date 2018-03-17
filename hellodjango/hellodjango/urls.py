@@ -16,9 +16,10 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 
-from hellodjango.views import hello
+from hellodjango.views import hello, current_datetime
 
 urlpatterns = [
     url(r'^admin', admin.site.urls),
     url(r'^hello/$', hello),
+    url(r'^time/$', current_datetime),
 ]
